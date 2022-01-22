@@ -1,0 +1,153 @@
+--[[
+
+Inspired by the strong weapon that you can acquire by killing an Evoker in a Raid in Minecraft,
+it is very useful if you are on Hardcore. The credits to the Totem of Undying goes to Mojang Studios, but I decided to
+make a script about it because why not.
+
+Credits: @WritingModder
+Made because: I was bored.
+Version: 1.0
+
+--]]
+
+local ScreenGui = Instance.new("ScreenGui")
+local TotemOfUndying = Instance.new("ImageLabel")
+local TotemSound = Instance.new("Sound")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TotemOfUndying.Name = "TotemOfUndying"
+TotemOfUndying.Parent = ScreenGui
+TotemOfUndying.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TotemOfUndying.BackgroundTransparency = 1.000
+TotemOfUndying.BorderSizePixel = 0
+TotemOfUndying.Position = UDim2.new(0.421087414, 0, 0.378188729, 0)
+TotemOfUndying.Size = UDim2.new(0, 149, 0, 155)
+TotemOfUndying.Image = "http://www.roblox.com/asset/?id=8228195722"
+TotemOfUndying.Visible = false
+
+TotemSound.SoundId = "rbxassetid://6807298096"
+TotemSound.Playing = false
+TotemSound.Parent = game.SoundService
+
+if TotemOfUndying.Parent:FindFirstChild("TotemOfUndying") then
+    print("Successfully loaded the script.")
+end
+
+while wait(1) do
+    if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end
+    if game.Players.LocalPlayer.Character.Humanoid.Health == 13 then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end
+    if game.Players.LocalPlayer.Character.Humanoid.Health == 11 then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end
+    if game.Players.LocalPlayer.Character.Humanoid.Health == 12 then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end
+	if game.Players.LocalPlayer.Character.Humanoid.Health == 10 then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+    end
+end
+    if game.Players.LocalPlayer.Character.Humanoid.Health == 21 then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end
+    if game.Players.LocalPlayer.Character.Humanoid.Health == 18 then
+        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end
+    if game.Players.LocalPlayer.Character.Humanoid.Health == 11 then
+		game.Players.LocalPlayer.Character.Humanoid.Health = 100
+        TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+        TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end
