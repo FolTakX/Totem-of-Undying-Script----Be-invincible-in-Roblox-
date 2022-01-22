@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FolTakX/Totem-of-Undying-Script----Be-invincible-in-Roblox-/main/Totem%20of%20Undying%20Script.txt"))()
