@@ -90,7 +90,7 @@ while wait(1) do
         game.Players.LocalPlayer.Character.Humanoid.Health = 100
 		TotemOfUndying.Transparency = 2
 		TotemOfUndying.Visible = true
-        TotemSound.Playing = true
+        	TotemSound.Playing = true
 		if TotemOfUndying.Transparency == 2 then
 			while wait(0.01) do
 				TotemOfUndying.Rotation += 10
