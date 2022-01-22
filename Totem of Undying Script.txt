@@ -13,6 +13,7 @@ Version: 1.0
 local ScreenGui = Instance.new("ScreenGui")
 local TotemOfUndying = Instance.new("ImageLabel")
 local TotemSound = Instance.new("Sound")
+local PopTotem = Instance.new("TextButton")
 
 --Properties:
 
@@ -28,6 +29,39 @@ TotemOfUndying.Position = UDim2.new(0.421087414, 0, 0.378188729, 0)
 TotemOfUndying.Size = UDim2.new(0, 149, 0, 155)
 TotemOfUndying.Image = "http://www.roblox.com/asset/?id=8228195722"
 TotemOfUndying.Visible = false
+
+
+PopTotem.Name = "PopTotem"
+PopTotem.Parent = ScreenGui
+PopTotem.BackgroundColor3 = Color3.fromRGB(251, 255, 6)
+PopTotem.BorderSizePixel = 0
+PopTotem.Size = UDim2.new(0, 89, 0, 29)
+PopTotem.Font = Enum.Font.SourceSans
+PopTotem.Text = "Pop Totem of Undying"
+PopTotem.TextColor3 = Color3.fromRGB(0, 0, 0)
+PopTotem.TextScaled = true
+PopTotem.TextSize = 14.000
+PopTotem.TextWrapped = true
+
+local function PopTotemScript() -- PopTotem.Script 
+	local script = Instance.new('Script', PopTotem)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Destroy()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 100
+		TotemOfUndying.Transparency = 2
+		TotemOfUndying.Visible = true
+		TotemSound.Playing = true
+		if TotemOfUndying.Transparency == 2 then
+			while wait(0.01) do
+				TotemOfUndying.Rotation += 10
+				if TotemOfUndying.Rotation == 360 then
+					TotemOfUndying:Destroy()
+				end
+			end
+		end
+	end)
+end
 
 TotemSound.SoundId = "rbxassetid://6807298096"
 TotemSound.Playing = false
