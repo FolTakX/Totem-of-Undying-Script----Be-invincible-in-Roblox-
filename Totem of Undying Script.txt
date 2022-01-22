@@ -47,16 +47,16 @@ local function PopTotemScript() -- PopTotem.Script
 	local script = Instance.new('Script', PopTotem)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Destroy()
 		game.Players.LocalPlayer.Character.Humanoid.Health = 100
 		TotemOfUndying.Transparency = 2
 		TotemOfUndying.Visible = true
 		TotemSound.Playing = true
 		if TotemOfUndying.Transparency == 2 then
+		script.Parent.Destroy()
 			while wait(0.01) do
 				TotemOfUndying.Rotation += 10
 				if TotemOfUndying.Rotation == 360 then
-					TotemOfUndying:Destroy()
+					TotemOfUndying:Destroy()	
 				end
 			end
 		end
