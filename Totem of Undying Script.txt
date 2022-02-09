@@ -72,11 +72,11 @@ if TotemOfUndying.Parent:FindFirstChild("TotemOfUndying") then
 end
 
 while wait(1) do
-    if game.Players.LocalPlayer.Character.Humanoid.Health == game.Players.LocalPlayer.Character.Humanoid.Health ~= 11 then
-        game.Players.LocalPlayer.Character.Humanoid.Health = 100
+	if game.Players.LocalPlayer.Character.Humanoid.Health == game.Players.LocalPlayer.Character.Humanoid.Health ~= 11 then
+		game.Players.LocalPlayer.Character.Humanoid.Health = 100
 		TotemOfUndying.Transparency = 2
 		TotemOfUndying.Visible = true
-        TotemSound.Playing = true
+		TotemSound.Playing = true
 		if TotemOfUndying.Transparency == 2 then
 			while wait(0.01) do
 				TotemOfUndying.Rotation += 10
@@ -86,3 +86,4 @@ while wait(1) do
 			end
 		end
 	end
+end
