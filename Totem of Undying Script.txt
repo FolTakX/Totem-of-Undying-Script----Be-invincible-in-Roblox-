@@ -72,7 +72,7 @@ if TotemOfUndying.Parent:FindFirstChild("TotemOfUndying") then
 end
 
 while wait(1) do
-	if game.Players.LocalPlayer.Character.Humanoid.Health > 11 then
+	if game.Players.LocalPlayer.Character.Humanoid.Health < 11 then
 		game.Players.LocalPlayer.Character.Humanoid.Health = 100
 		TotemOfUndying.Transparency = 2
 		TotemOfUndying.Visible = true
